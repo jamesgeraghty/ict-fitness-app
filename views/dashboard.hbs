@@ -3,12 +3,12 @@
 <section class="ui segment">
   
     Assessment List
-  </header>
+  </header> {{> analytics}}
   <table class="ui fixed table">
     <tbody>
-      {{> analytics}}
+     
     <div class="ui bulleted list">
-        {{#each assessment}}
+        {{#each assessments}}
       <tr>
         <td>
         {{title}}
