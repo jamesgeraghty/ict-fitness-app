@@ -1,7 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const assessmentListStore = require("../models/assessment-store");
+const assessmentListStore = require("../models/assessment-list-store");
 const memberStore = require("../models/member-store.js");
 const accounts = require("./accounts.js");
 const uuid = require("uuid");
@@ -9,22 +9,21 @@ const uuid = require("uuid");
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
-    const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
       title: "Template 1 Dashboard",
-      assessment: assessmentListStore.getAllAssessments(),
+      assessmentlist: assessmentListStore.getAllAssessments(),
     };
     response.render("dashboard", viewData);
   },
 
   
   addAssessment(request, response) {
-    const loggedInMember = accounts.getCurrentMember(request);
+    
     let current_datetime = new Date() // Set variable to current date and time
     let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear() + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds();
+    
     const newAssessment = {
       id: uuid.v1(), 
-      memberid: loggedInMember.id,
       entry: formatted_date,  
       weight: request.body.weight,
       chest: request.body.chest,

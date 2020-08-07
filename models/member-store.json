@@ -28,5 +28,57 @@
       "password": "123",
       "id": "c44f2fa0-d690-11ea-a2fa-b3dff2c2f267"
     }
+  ],
+  "members": [
+    {
+      "name": "James Geraghty",
+      "gender": "",
+      "email": "jamesgeraghty@live.ie",
+      "password": "123",
+      "address": "kilheffernan",
+      "height": "",
+      "startingweight": "",
+      "id": "e6958eb0-d8b6-11ea-bc8d-d93c47c9c429"
+    },
+    {
+      "name": "Michael Geraghty Geraghty",
+      "gender": "",
+      "email": "123@123",
+      "password": "123",
+      "address": "2805 23RD ST",
+      "height": "",
+      "startingweight": "",
+      "id": "060a1400-d8b7-11ea-bc8d-d93c47c9c429"
+    },
+    {
+      "name": "James Geraghty",
+      "gender": "",
+      "email": "123@123",
+      "password": "123",
+      "address": "kilheffernan",
+      "height": "",
+      "startingweight": "",
+      "id": "38e5ae60-d8b8-11ea-bcd7-4d42f69015b9"
+    },
+    {
+      "name": "James Geraghty",
+      "gender": "1",
+      "email": "789@789",
+      "password": "789",
+      "address": "kilheffernan",
+      "height": "",
+      "startingweight": "",
+      "id": "7cc58740-d8bd-11ea-b7b0-e3a6c50b58e9"
+    },
+    {
+      "name": "",
+      "gender": "",
+      "email": "123@123",
+      "password": "123",
+      "address": "",
+      "height": "",
+      "startingweight": "",
+      "id": "1e648a00-d8bf-11ea-af28-e73f550ca658"
+    }
   ]
 }

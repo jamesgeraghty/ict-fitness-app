@@ -18,8 +18,8 @@ const assessmentListStore = {
     this.store.save();
   },
   
-   getAssessment(id) {
-    return this.store.findOneBy(this.collection, { id: id });
+    getMemberAssessments(memberid) {
+    return this.store.findBy(this.collection, { memberid: memberid });
   },
 
   removeAssessment(id) {
