@@ -1,13 +1,25 @@
 {
   "assessmentListCollection": [
-  
     {
-      "id": "d8378da0-d889-11ea-9951-73d1f37f6cbc",
-      "weight": "1212",
+      "id": "00187f20-d8bf-11ea-af28-e73f550ca658",
+      "memberid": "e6958eb0-d8b6-11ea-bc8d-d93c47c9c429",
+      "entry": "7-8-2020 15:2:24",
+      "weight": "250",
       "chest": "12",
       "thigh": "12",
       "upperArm": "12",
-      "waist": "12",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "14332230-d8bf-11ea-af28-e73f550ca658",
+      "memberid": "e6958eb0-d8b6-11ea-bc8d-d93c47c9c429",
+      "entry": "7-8-2020 15:2:57",
+      "weight": "250",
+      "chest": "12",
+      "thigh": "12",
+      "upperArm": "",
+      "waist": "",
       "hips": "12"
     }
   ]

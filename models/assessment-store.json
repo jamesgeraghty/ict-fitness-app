@@ -1,0 +1,43 @@
+{
+  "assessmentListCollection": [
+    {
+      "id": "d8378da0-d889-11ea-9951-73d1f37f6cbc",
+      "weight": "1212",
+      "chest": "12",
+      "thigh": "12",
+      "upperArm": "12",
+      "waist": "12",
+      "hips": "12"
+    },
+    {
+      "id": "433a7cb0-d8b8-11ea-bcd7-4d42f69015b9",
+      "entry": "7-8-2020 14:14:10",
+      "weight": "249.8",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "faad5950-d8bb-11ea-b7b0-e3a6c50b58e9",
+      "entry": "7-8-2020 14:40:46",
+      "weight": "123",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "fdaae1e0-d8bb-11ea-b7b0-e3a6c50b58e9",
+      "entry": "7-8-2020 14:40:51",
+      "weight": "",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": "78"
+    }
+  ]
+}
