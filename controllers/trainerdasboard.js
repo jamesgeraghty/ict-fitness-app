@@ -8,9 +8,9 @@ const uuid = require("uuid");
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
-    const loggedInMember = accounts.getCurrentMember(request);
+    const loggedInTrainer = accounts.getCurrentTrainer(request);
     const viewData = {
-      assessments: assessmentStore.getMemberAssessments(loggedInMember.id)
+      assessments: assessmentStore.getTrainerAssessments(loggedInTrainer.id)
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);
@@ -18,12 +18,12 @@ const dashboard = {
 
   
   addAssessment(request, response) {
-    const loggedInMember = accounts.getCurrentMember(request);
+    const loggedInTrainer = accounts.getCurrentTrainer(request);
     let current_datetime = new Date() // Set variable to current date and time
     let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear() + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds();
     const newAssessment = {
       id: uuid.v1(), 
-      memberid: loggedInMember.id,
+      memberid: loggedInTrainer.id,
       entry: formatted_date,  
       weight: request.body.weight,
       chest: request.body.chest,
@@ -37,9 +37,9 @@ const dashboard = {
   },
   
     deleteAssessment(request, response) {
-    const todoId = request.params.id;
-    logger.info(`Deleting todo ${todoId}`);
-    assessmentStore.removeAssessment(todoId);
+    const assessmentId = request.params.id;
+    logger.info(`Deleting assessment ${assessmentId}`);
+    assessmentStore.removeAssessment(assessmentId);
     response.redirect("/dashboard");
   },
 };

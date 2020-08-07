@@ -43,6 +43,17 @@
       "upperArm": "45",
       "waist": "45",
       "hips": "45"
+    },
+    {
+      "id": "6483d220-d8f1-11ea-bc5f-398d075827fe",
+      "memberid": "e6958eb0-d8b6-11ea-bc8d-d93c47c9c429",
+      "entry": "7-8-2020 21:3:7",
+      "weight": "25",
+      "chest": "78",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
     }
   ]
 }
