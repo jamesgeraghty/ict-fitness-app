@@ -1,8 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const assessmentListStore = require("../models/assessment-store");
-const memberStore = require("../models/member-store.js");
+const assessmentStore = require("../models/assessment-store");
 const accounts = require("./accounts.js");
 const uuid = require("uuid");
 
@@ -11,9 +10,9 @@ const dashboard = {
     logger.info("dashboard rendering");
     const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
-      title: "Template 1 Dashboard",
-      assessment: assessmentListStore.getAllAssessments(),
+      assessments: assessmentStore.getMemberAssessments(loggedInMember.id)
     };
+    logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);
   },
 
@@ -33,14 +32,14 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
     };
-    assessmentListStore.addAssessment(newAssessment);
+    assessmentStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
   },
   
     deleteAssessment(request, response) {
     const todoId = request.params.id;
     logger.info(`Deleting todo ${todoId}`);
-    assessmentListStore.removeAssessment(todoId);
+    assessmentStore.removeAssessment(todoId);
     response.redirect("/dashboard");
   },
 };

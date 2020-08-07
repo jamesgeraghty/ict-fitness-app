@@ -18,7 +18,8 @@ const assessmentListStore = {
     this.store.save();
   },
   
-    getMemberAssessments(memberid) {
+  
+  getMemberAssessments(memberid) {
     return this.store.findBy(this.collection, { memberid: memberid });
   },
 
