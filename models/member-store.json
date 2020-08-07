@@ -1,34 +1,4 @@
 {
-  "users": [
-    {
-      "firstName": "homer",
-      "lastName": "simpson",
-      "email": "homer@simpson.com",
-      "password": "secret",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
-    },
-    {
-      "firstName": "marge",
-      "lastName": "simpson",
-      "email": "marge@simpson.com",
-      "password": "secret",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    },
-    {
-      "firstName": "James",
-      "lastName": "Geraghty",
-      "email": "jamesgeraghty@live.ie",
-      "password": "123",
-      "id": "aa088060-d690-11ea-a2fa-b3dff2c2f267"
-    },
-    {
-      "firstName": "Amy",
-      "lastName": "Geraghty",
-      "email": "123@123",
-      "password": "123",
-      "id": "c44f2fa0-d690-11ea-a2fa-b3dff2c2f267"
-    }
-  ],
   "members": [
     {
       "name": "James Geraghty",
@@ -99,6 +69,26 @@
       "height": "",
       "startingweight": "",
       "id": "b303d7d0-d8c2-11ea-9344-1df64516063d"
+    },
+    {
+      "name": "",
+      "gender": "",
+      "email": "123@123",
+      "password": "123",
+      "address": "",
+      "height": "",
+      "startingweight": "",
+      "id": "253dd2e0-d8cf-11ea-a3b1-117e8abbac99"
+    },
+    {
+      "name": "James Geraghty",
+      "gender": "1",
+      "email": "jamesgeraghty@live.ie",
+      "password": "789",
+      "address": "Kilheffernan",
+      "height": "78",
+      "startingweight": "12",
+      "id": "16d89ee0-d8ef-11ea-8c71-0f67510015d8"
     }
   ]
 }
