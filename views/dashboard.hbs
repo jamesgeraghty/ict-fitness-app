@@ -1,11 +1,10 @@
 {{> menu id="dashboard"}}
 
-<section class="ui center aligned middle aligned segment">
- 
+<section class="ui segment">
+  
     Assessment List
   </header>
-  <table class="ui celled table">
-   
+  <table class="ui fixed table">
     <tbody>
       {{> analytics}}
     <div class="ui bulleted list">
@@ -14,7 +13,6 @@
         <td>
         {{title}}
     </td>
-    
     <td>
         {{weight}}
     </td>
@@ -33,12 +31,15 @@
     <td>
         {{hips}}
     </td>
+        <td>
+          <a href="/member/{{../member.id}}/deleteassessment{{id}}"  class="ui icon button">
+          <i class="icon trash"></i>
+        </td>
     </tr>
         {{/each}}
-    </div>
+      </div>
     </tbody>
 </table>
-
 {{> assessment-table}}
 {{> addassessment}}
 </section>

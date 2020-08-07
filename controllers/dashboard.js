@@ -35,6 +35,13 @@ const dashboard = {
     assessmentListStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
   },
+  
+    deleteAssessment(request, response) {
+    const todoId = request.params.id;
+    logger.info(`Deleting todo ${todoId}`);
+    assessmentListStore.removeAssessment(todoId);
+    response.redirect("/dashboard");
+  },
 };
 
 module.exports = dashboard;
