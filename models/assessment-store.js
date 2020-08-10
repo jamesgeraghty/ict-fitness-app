@@ -3,14 +3,14 @@
 const _ = require("lodash");
 const JsonStore = require("./json-store");
 
-const assessmentListStore = {
+const assessmentStore = {
   store: new JsonStore("./models/assessment-list-store.json", {
-    assessmentListCollection: [],
+    assessmentCollection: [],
   }),
-  collection: "assessmentListCollection",
+  collection: "assessmentCollection",
 
-  getAllAssessments() {
-    return this.store.findAll(this.collection);
+  getAllAssessments(id) {
+    return this.store.findAll(this.collection, { id: id });
   },
 
   addAssessment(assessment) {
@@ -30,4 +30,4 @@ const assessmentListStore = {
   },
 };
 
-module.exports = assessmentListStore;
+module.exports = assessmentStore;

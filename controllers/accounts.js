@@ -1,6 +1,7 @@
 'use strict';
 
 const memberstore = require('../models/member-store');
+const trainerstore = require('../models/trainer-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 
@@ -46,14 +47,23 @@ const accounts = {
     response.redirect('/');
   },
 
-  authenticate(request, response) {
+ authenticate(request, response) {
     const member = memberstore.getMemberByEmail(request.body.email);
-    if (member) {
-      response.cookie('assessment', member.email);
+    const trainer = trainerstore.getTrainerByEmail(request.body.email);
+    const password = request.body.password;
+    if (member && member.password === password) {
+      response.cookie("member", member.email);
       logger.info(`logging in ${member.email}`);
-      response.redirect('/dashboard');
-    } else {
-      response.redirect('/login');
+      response.redirect("/dashboard");
+    } 
+     else if(trainer && trainer.password === password) {
+      const trainerId = request.params.id;
+      response.cookie("trainer", trainer.email);
+      logger.info(`logging in ${trainer.email}`);
+      response.redirect("/trainerdashboard");
+    }
+    else {
+      response.redirect("/login");
     }
   },
 
@@ -61,6 +71,14 @@ const accounts = {
     const memberEmail = request.cookies.assessment;
     return memberstore.getMemberByEmail(memberEmail);
   },
+  
+  getCurrentTrainer(request) {
+    const trainerEmail = request.cookies.assessment;
+    return trainerstore.getTrainerByEmail(trainerEmail);
+  },
+  
+ 
+ 
 };
 
 module.exports = accounts;

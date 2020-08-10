@@ -43,6 +43,30 @@
       "upperArm": "45",
       "waist": "45",
       "hips": "45"
+    },
+    {
+      "id": "6483d220-d8f1-11ea-bc5f-398d075827fe",
+      "memberid": "e6958eb0-d8b6-11ea-bc8d-d93c47c9c429",
+      "entry": "7-8-2020 21:3:7",
+      "weight": "25",
+      "chest": "78",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    }
+  ],
+  "assessmentCollection": [
+    {
+      "id": "a4ab7700-d990-11ea-86be-6dba56f37b32",
+      "memberid": "e6958eb0-d8b6-11ea-bc8d-d93c47c9c429",
+      "entry": "8-8-2020 16:3:4",
+      "weight": "12",
+      "chest": "12",
+      "thigh": "12",
+      "upperArm": "12",
+      "waist": "1",
+      "hips": "12"
     }
   ]
 }

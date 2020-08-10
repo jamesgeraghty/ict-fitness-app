@@ -1,43 +1,8 @@
 {{> menu id="dashboard"}}
 
 <section class="ui segment">
-  
-    Assessment List
   </header> {{> analytics}}
   <table class="ui fixed table">
-    <tbody>
-     
-    <div class="ui bulleted list">
-        {{#each assessments}}
-      <tr>
-        <td>
-        {{title}}
-    </td>
-    <td>
-        {{weight}}
-    </td>
-    <td>
-        {{chest}}
-    </td>
-    <td>
-        {{thigh}}
-    </td>
-    <td>
-        {{upperArm}}
-    </td>
-    <td>
-        {{waist}}
-    </td>
-    <td>
-        {{hips}}
-    </td>
-        <td>
-          <a href="/member/{{../member.id}}/deleteassessment{{id}}"  class="ui icon button">
-          <i class="icon trash"></i>
-        </td>
-    </tr>
-        {{/each}}
-      </div>
     </tbody>
 </table>
 {{> assessment-table}}
