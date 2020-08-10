@@ -89,6 +89,16 @@
       "height": "78",
       "startingweight": "12",
       "id": "16d89ee0-d8ef-11ea-8c71-0f67510015d8"
+    },
+    {
+      "name": "James Geraghty",
+      "gender": "",
+      "email": "jamesgeraghty@live.ie",
+      "password": "123",
+      "address": "Kilheffernan",
+      "height": "",
+      "startingweight": "",
+      "id": "b9fc8b20-d978-11ea-9439-8dc3111add5d"
     }
   ]
 }

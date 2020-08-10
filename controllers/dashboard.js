@@ -37,9 +37,9 @@ const dashboard = {
   },
   
     deleteAssessment(request, response) {
-    const todoId = request.params.id;
-    logger.info(`Deleting todo ${todoId}`);
-    assessmentStore.removeAssessment(todoId);
+    const assessmentId = request.params.id;
+    logger.info(`Deleting assessment ${assessmentId}`);
+    assessmentStore.removeAssessment(assessmentId);
     response.redirect("/dashboard");
   },
 };
