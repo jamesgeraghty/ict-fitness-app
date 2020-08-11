@@ -1,15 +1,5 @@
-{{> menu id="trainerdashboard"}}
+{{> menu id="dashboard"}}
 
-{{#each members}}
-
-  <section class="ui segment">
-    </header> {{> analytics}}
-    <table class="ui fixed table">
-      </tbody>
-    </table>
-  {{> assessment-table}}
-
-  </section>
-{{/each}}
-
-
+<section class="ui segment">
+  {{> listmembers}}
+</section>
