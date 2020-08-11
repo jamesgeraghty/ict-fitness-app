@@ -10,7 +10,7 @@ const dashboard = {
     logger.info("dashboard rendering");
     const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
-      assessments: assessmentStore.getMemberAssessments(loggedInMember.id)
+      assessment: assessmentStore.getMemberAssessments(loggedInMember.id)
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);

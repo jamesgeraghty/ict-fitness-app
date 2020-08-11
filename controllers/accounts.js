@@ -1,18 +1,13 @@
 'use strict';
 
+
 const memberstore = require('../models/member-store');
 const trainerstore = require('../models/trainer-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
 
 const accounts = {
-  index(request, response) {
-    const viewData = {
-      title: "Login or Signup"
-    };
-    response.render("index", viewData);
-  },
-
+  
   index(request, response) {
     const viewData = {
       title: 'Login or Signup',
@@ -68,17 +63,15 @@ const accounts = {
   },
 
   getCurrentMember(request) {
-    const memberEmail = request.cookies.assessment;
+    const memberEmail = request.cookies.member;
     return memberstore.getMemberByEmail(memberEmail);
   },
-  
-  getCurrentTrainer(request) {
-    const trainerEmail = request.cookies.assessment;
+   
+    getCurrentTrainer(request) {
+    const trainerEmail = request.cookies.trainer;
     return trainerstore.getTrainerByEmail(trainerEmail);
   },
-  
- 
- 
+
 };
 
 module.exports = accounts;
