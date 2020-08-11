@@ -3,9 +3,10 @@
 <div class="ui two column grid basic middle aligned segment">
   <div class="column">
     <form class="ui stacked segment form" action="/register" method="POST">
-      <h1 class="ui orange header">Register</h1>
+      <h1 class="ui blue header">Register</h1>
       <div class="two fields">
-        <div class="field">
+        
+        <div class="field required">
           <label>Name</label>
           <input placeholder="Name" type="text"  name="name">
         </div>
@@ -26,21 +27,18 @@
       <div class="field required">
          <label>Email</label>
           <div class="ui left icon input">
-              <i class="mail icon"></i>
               <input placeholder="Email" name="email">
           </div>
       </div>
       <div class="field required">
         <label>Password</label>
           <div class="ui left icon input">
-              <i class="lock icon"></i>
               <input type="password"  name="password">
           </div>
       </div>
       <div class="field">
         <label>Address</label>
         <div class="ui left icon input">
-          <i class="address card icon"></i>
           <input type="text" name="address">
         </div>
       </div>
@@ -51,7 +49,7 @@
         </div>
         <div class="field">
           <label>Starting Weight</label>
-          <input type="number" placeholder="weight (kg)" step="0.1"  min="0" max="250"name="startingweight">
+          <input type="number" placeholder="weight (kg)" step="1"  min="0" max="250"name="startingweight">
         </div>
       </div>
       <div class="ui success message">

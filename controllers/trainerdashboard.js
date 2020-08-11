@@ -5,12 +5,12 @@ const assessmentStore = require("../models/assessment-store");
 const accounts = require("./accounts.js");
 const uuid = require("uuid");
 
-const dashboard = {
+const trainerdashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInTrainer = accounts.getCurrentTrainer(request);
     const viewData = {
-      assessments: assessmentStore.getTrainerAssessments(loggedInTrainer.id)
+      assessments: assessmentStore.getMemberAssessments(loggedInTrainer.id)
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);
@@ -44,4 +44,4 @@ const dashboard = {
   },
 };
 
-module.exports = dashboard;
+module.exports = trainerdashboard;
