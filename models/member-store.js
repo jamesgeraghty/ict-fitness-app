@@ -24,6 +24,13 @@ const memberStore = {
   getMemberByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
   },
+  
+  removeAssessment(id, assessmentId) {
+    const member = this.getMember(id);
+    const assessment = member.assessment;
+    _.remove(assessment, { id: assessmentId });
+    this.store.save();
+  },
 };
 
 module.exports = memberStore;
