@@ -36,7 +36,7 @@ const dashboard = {
     response.redirect("/dashboard");
   },
   
-    deleteAssessment(request, response) {
+ deleteAssessment(request, response) {
     const assessmentId = request.params.id;
     logger.info(`Deleting assessment ${assessmentId}`);
     assessmentStore.removeAssessment(assessmentId);
