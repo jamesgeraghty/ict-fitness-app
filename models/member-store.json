@@ -79,6 +79,16 @@
       "height": "1.5",
       "startingweight": "85",
       "id": "e2ebc670-dede-11ea-9f4d-8565e50afbf4"
+    },
+    {
+      "name": "stefi",
+      "gender": "0",
+      "email": "stefi@graff.com",
+      "password": "q",
+      "address": "Germany",
+      "height": "2",
+      "startingweight": "89",
+      "id": "5e2a8f30-def6-11ea-84a3-1f5b300f65b9"
     }
   ]
 }
