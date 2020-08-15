@@ -69,6 +69,16 @@
       "height": "",
       "startingweight": "",
       "id": "6869d8e0-dcb5-11ea-b79b-99851221e786"
+    },
+    {
+      "name": "dave ",
+      "gender": "1",
+      "email": "dave@dave.com",
+      "password": "dave",
+      "address": "",
+      "height": "1.5",
+      "startingweight": "85",
+      "id": "e2ebc670-dede-11ea-9f4d-8565e50afbf4"
     }
   ]
 }
