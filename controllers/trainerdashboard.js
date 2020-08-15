@@ -46,6 +46,16 @@ const trainerdashboard = {
     assessmentStore.removeAssessment(assessmentId);
     response.redirect("/dashboard");
   },
+  
+  trainerAssessments(request, response){
+    const trainerId = request.params.id;
+    const viewMemeberData = {
+      title: "Trainer view of member dashboard",
+      member: memberStore.getMemberById(trainerId),
+      assessments: assessmentStore.getMemberAssessments(trainerId).reverse(),
+    };
+    response.render("trainerassessments", viewMemeberData);
+  },
 };
 
 module.exports = trainerdashboard;
