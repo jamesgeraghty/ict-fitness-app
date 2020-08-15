@@ -2,18 +2,22 @@
 
 const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
+const memberStore = require("../models/member-store");
 const accounts = require("./accounts.js");
 const uuid = require("uuid");
 
 const trainerdashboard = {
   index(request, response) {
-    logger.info("dashboard rendering");
-    const loggedInTrainer = accounts.getCurrentTrainer(request);
+    const memberId = request.params.id;
+    
+    logger.debug('Member id =', memberId);
+    logger.info("Trainer dashboard rendering");
+    const loggedInMember = accounts.getCurrentTrainer(request);
     const viewData = {
-      assessments: assessmentStore.getMemberAssessments(loggedInTrainer.id)
+       member: memberStore.getAllMembers()
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
-    response.render("dashboard", viewData);
+    response.render("trainerdashboard", viewData);
   },
 
   
