@@ -97,6 +97,17 @@
       "upperArm": "6",
       "waist": "6",
       "hips": "6"
+    },
+    {
+      "id": "5c35a490-df18-11ea-ac43-8d6718d83c06",
+      "memberid": "4b7e02a0-df18-11ea-ac43-8d6718d83c06",
+      "entry": "15-8-2020 16:57:10",
+      "weight": "12",
+      "chest": "12",
+      "thigh": "12",
+      "upperArm": "12",
+      "waist": "12",
+      "hips": "212"
     }
   ]
 }

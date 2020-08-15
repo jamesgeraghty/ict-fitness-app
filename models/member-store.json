@@ -89,6 +89,16 @@
       "height": "2",
       "startingweight": "89",
       "id": "5e2a8f30-def6-11ea-84a3-1f5b300f65b9"
+    },
+    {
+      "name": "Amy",
+      "gender": "0",
+      "email": "amy@amy.com",
+      "password": "amy",
+      "address": "",
+      "height": "",
+      "startingweight": "",
+      "id": "4b7e02a0-df18-11ea-ac43-8d6718d83c06"
     }
   ]
 }
