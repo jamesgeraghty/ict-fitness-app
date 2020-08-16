@@ -44,17 +44,6 @@
       "hips": ""
     },
     {
-      "id": "eb2b1850-dc17-11ea-9dbf-7f6503ff2072",
-      "memberid": "8f67e920-dba5-11ea-9b90-2519d733fd6b",
-      "entry": "11-8-2020 21:16:27",
-      "weight": "12",
-      "chest": "",
-      "thigh": "",
-      "upperArm": "",
-      "waist": "",
-      "hips": ""
-    },
-    {
       "id": "d2e5f2b0-deba-11ea-bd09-4b7ec1423eec",
       "memberid": "8f67e920-dba5-11ea-9b90-2519d733fd6b",
       "entry": "15-8-2020 5:47:37",
@@ -108,6 +97,39 @@
       "upperArm": "12",
       "waist": "12",
       "hips": "212"
+    },
+    {
+      "id": "04641f70-dffa-11ea-9149-4d13363de659",
+      "memberid": "8f67e920-dba5-11ea-9b90-2519d733fd6b",
+      "entry": "16-8-2020 19:52:29",
+      "weight": "12",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "1bf99160-dffa-11ea-9149-4d13363de659",
+      "memberid": "8f67e920-dba5-11ea-9b90-2519d733fd6b",
+      "entry": "16-8-2020 19:53:9",
+      "weight": "12",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "c3a3d1e0-dffb-11ea-9149-4d13363de659",
+      "memberid": "a2d784c0-dffb-11ea-9149-4d13363de659",
+      "entry": "16-8-2020 20:5:0",
+      "weight": "35",
+      "chest": "36",
+      "thigh": "36",
+      "upperArm": "34",
+      "waist": "35",
+      "hips": "33"
     }
   ]
 }
