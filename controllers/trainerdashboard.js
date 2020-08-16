@@ -48,13 +48,13 @@ const trainerdashboard = {
   },
   
   trainerAssessments(request, response){
-    const trainerId = request.params.id;
-    const viewMemeberData = {
+    const memberId = request.params.id;
+    const viewMemberData = {
       title: "Trainer view of member dashboard",
-      member: memberStore.getMemberById(trainerId),
-      assessments: assessmentStore.getMemberAssessments(trainerId).reverse(),
+      member: memberStore.getMemberById(memberId),
+      assessments: assessmentStore.getMemberAssessments(memberId).reverse(),
     };
-    response.render("trainerassessments", viewMemeberData);
+    response.render("trainerassessments", viewMemberData);
   },
 };
 

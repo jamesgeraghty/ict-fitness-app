@@ -13,7 +13,6 @@ const dashboard = {
     const viewData = {
       assessment: assessmentStore.getMemberAssessments(loggedInMember.id),
       member: memberStore.getMemberById(loggedInMember.id),
-      message:"Hey"
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);

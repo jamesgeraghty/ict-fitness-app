@@ -3,6 +3,8 @@
   <h2 class="ui header">
     {{member.name}}
   </h2>
-    {{> analytics}}
-    {{> assessment-table-comment}}
+    {{> analytics}} 
+  {{#each assessments}}
+    {{> assessment-table}}
+  {{/each}}
 </section>
