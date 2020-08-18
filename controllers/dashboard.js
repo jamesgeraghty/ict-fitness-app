@@ -4,6 +4,7 @@ const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
 const accounts = require("./accounts.js");
 const uuid = require("uuid");
+const BMI = require("../utils/bmi-calculator.js");
 const memberStore = require("../models/member-store");
 
 const dashboard = {
@@ -13,6 +14,7 @@ const dashboard = {
     const viewData = {
       assessment: assessmentStore.getMemberAssessments(loggedInMember.id),
       member: memberStore.getMemberById(loggedInMember.id),
+      BMI: BMI.BMICalculation(loggedInMember.id),
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);
