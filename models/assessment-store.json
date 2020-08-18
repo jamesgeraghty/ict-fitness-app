@@ -130,6 +130,39 @@
       "upperArm": "34",
       "waist": "35",
       "hips": "33"
+    },
+    {
+      "id": "17c89f90-e0c3-11ea-9b61-c967ee40df18",
+      "memberid": "8f67e920-dba5-11ea-9b90-2519d733fd6b",
+      "entry": "17-8-2020 19:51:51",
+      "weight": "12",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "6aaf7990-e18b-11ea-9ffb-119a23999a64",
+      "memberid": "4bcef6e0-e18b-11ea-9ffb-119a23999a64",
+      "entry": "18-8-2020 19:45:49",
+      "weight": "12",
+      "chest": "50",
+      "thigh": "12",
+      "upperArm": "12",
+      "waist": "1",
+      "hips": "212"
+    },
+    {
+      "id": "a2da69d0-e18e-11ea-8516-efc238de0352",
+      "memberid": "4bcef6e0-e18b-11ea-9ffb-119a23999a64",
+      "entry": "18-8-2020 20:8:52",
+      "weight": "85",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
     }
   ]
 }
