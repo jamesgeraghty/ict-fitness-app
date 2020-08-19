@@ -4,19 +4,19 @@ const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
 const memberStore = require("../models/member-store");
 const accounts = require("./accounts.js");
+const trainerStore = require("../models/trainer-store");
 const BMI = require("../utils/bmi-calculator.js");
 const uuid = require("uuid");
 
 const trainerdashboard = {
   index(request, response) {
     const memberId = request.params.id;
-    
     logger.debug('Member id =', memberId);
     logger.info("Trainer dashboard rendering");
-    const loggedInMember = accounts.getCurrentTrainer(request);
+    const loggedInTrainer = accounts.getCurrentTrainer(request);
     const viewData = {
-       member: memberStore.getAllMembers()
-       
+       member: memberStore.getAllMembers(),
+       trainer: trainerStore.getTrainerById(loggedInTrainer.id),
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("trainerdashboard", viewData);
@@ -55,7 +55,6 @@ const trainerdashboard = {
       title: "Trainer view of member dashboard",
       member: memberStore.getMemberById(memberId),
       BMI: BMI.BMICalculation(memberId),      
-
       assessments: assessmentStore.getMemberAssessments(memberId).reverse(),
       
     };

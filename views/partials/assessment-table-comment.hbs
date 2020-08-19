@@ -1,9 +1,9 @@
-table class="ui celled table">
+<table class="ui celled table">
   <thead>
       {{>assessment-header}}
   </thead>
   <tbody>
-      {{> assessment-table-comment}}
+      {{> assessment-row}}
   </tbody>
   </table>
   <form class="ui secondary inverted charcoal segment form" action="/trainerdashboard/{{memberid}}/trainercomment/{{id}}" method="POST">

@@ -16,15 +16,18 @@ router.post("/register", accounts.register);
 router.post("/authenticate", accounts.authenticate);
 
 router.get("/", dashboard.index);
-router.get("/", trainerdashboard.index);
 router.get("/dashboard", dashboard.index);
-router.get("/trainerdashboard", trainerdashboard.index);
 router.get("/about", about.index);
 router.get("/dashboard/deleteassessment/:id", dashboard.deleteAssessment);
+router.post("/dashboard/addassessment", dashboard.addAssessment);
+
+
+router.get("/", trainerdashboard.index);
+router.get("/trainerdashboard", trainerdashboard.index);
 router.get('/trainerdashboard/trainerassessments/:id', trainerdashboard.trainerAssessments);
 //router.get('/trainerdashboard/deletemember/:id', trainerdashboard.deleteMember);
 
-router.post("/dashboard/addassessment", dashboard.addAssessment);
+
 
 
 module.exports = router;

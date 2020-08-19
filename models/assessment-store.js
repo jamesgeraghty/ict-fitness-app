@@ -32,6 +32,12 @@ const assessmentStore = {
     this.store.remove(this.collection, assessment);
     this.store.save();
   },
+    memberAssessmentSize(id, assessmentId) {
+    const member = this.getMember(id);
+    const assessments = member.assessments;
+    _.size(assessments, { id: assessmentId });
+  
+  },
 };
 
 module.exports = assessmentStore;

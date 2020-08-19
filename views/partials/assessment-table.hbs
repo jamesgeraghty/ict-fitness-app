@@ -1,10 +1,10 @@
-<table class="ui fixed table">
+<table class="ui celled table">
     <thead>
         {{>assessment-header}}
       
     </thead>
     <tbody>
-    {{#each assessment}}
+    {{#each assessments}}
         {{> assessment-row-with-delete}}
     {{/each}}
     </tbody>

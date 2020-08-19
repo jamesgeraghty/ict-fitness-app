@@ -1,13 +1,15 @@
-{{> trainermenu id="trainerassessments"}}
+{{> trainermenu id="trainerAssessments"}}
+
 <section class="ui center aligned middle aligned segment">
   <h2 class="ui header">
     {{member.name}}
   </h2>
+  
     {{> analytics}} 
+  
+  
+    {{> assessment-table}}
   {{#each assessments}}
-   {{> assessment-table}}
-  {{> assessment-row}}
-   
-    
-  {{/each}}
+    {{> addassessment}}
+     {{/each}}
 </section>
