@@ -6,6 +6,7 @@ const accounts = require("./accounts.js");
 const uuid = require("uuid");
 const BMI = require("../utils/bmi-calculator.js");
 const memberStore = require("../models/member-store");
+const trainertore = require("../models/trainer-store");
 
 const dashboard = {
   index(request, response) {
