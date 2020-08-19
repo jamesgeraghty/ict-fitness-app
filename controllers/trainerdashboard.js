@@ -4,6 +4,7 @@ const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
 const memberStore = require("../models/member-store");
 const accounts = require("./accounts.js");
+const BMI = require("../utils/bmi-calculator.js");
 const uuid = require("uuid");
 
 const trainerdashboard = {
@@ -15,6 +16,7 @@ const trainerdashboard = {
     const loggedInMember = accounts.getCurrentTrainer(request);
     const viewData = {
        member: memberStore.getAllMembers()
+       
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("trainerdashboard", viewData);
@@ -52,7 +54,10 @@ const trainerdashboard = {
     const viewMemberData = {
       title: "Trainer view of member dashboard",
       member: memberStore.getMemberById(memberId),
+      BMI: BMI.BMICalculation(memberId),      
+
       assessments: assessmentStore.getMemberAssessments(memberId).reverse(),
+      
     };
     response.render("trainerassessments", viewMemberData);
   },
