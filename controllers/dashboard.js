@@ -13,7 +13,7 @@ const dashboard = {
     logger.info("dashboard rendering");
     const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
-      assessment: assessmentStore.getMemberAssessments(loggedInMember.id),
+      assessments: assessmentStore.getMemberAssessments(loggedInMember.id),
       member: memberStore.getMemberById(loggedInMember.id),
       BMI: BMI.BMICalculation(loggedInMember.id),
     };

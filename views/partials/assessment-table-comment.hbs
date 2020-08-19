@@ -1,12 +1,13 @@
-table class="ui celled table">
+<table class="ui celled table">
   <thead>
       {{>assessment-header}}
   </thead>
   <tbody>
-      {{> assessment-table-comment}}
+      {{> assessment-row-with-delete}}
   </tbody>
+  
   </table>
-  <form class="ui secondary inverted charcoal segment form" action="/trainerdashboard/{{memberid}}/trainercomment/{{id}}" method="POST">
+  <form class="ui secondary segment form" action="/trainerdashboard/{{memberid}}/trainercomment/{{id}}" method="POST">
       <div class="field">
         <label>Comment</label>
           <input placeholder="Insert Comment Here" type="text" name="comment"> </input>
