@@ -6,6 +6,7 @@ const memberStore = require("../models/member-store");
 const accounts = require("./accounts.js");
 const trainerStore = require("../models/trainer-store");
 const BMI = require("../utils/bmi-calculator.js");
+const bmistatus = require("../utils/bmi-status.js");
 const uuid = require("uuid");
 
 const trainerdashboard = {
@@ -54,12 +55,39 @@ const trainerdashboard = {
     const viewMemberData = {
       title: "Trainer view of member dashboard",
       member: memberStore.getMemberById(memberId),
-      BMI: BMI.BMICalculation(memberId),      
+      BMI: BMI.BMICalculation(memberId), 
+      bmistatus:bmistatus.bmistatus(memberId),
       assessments: assessmentStore.getMemberAssessments(memberId).reverse(),
       
     };
     response.render("trainerassessments", viewMemberData);
   },
+  
+   deleteMember(request, response) {
+    const memberId = request.params.id;
+    const memberName = memberStore.getMemberById(memberId).name;
+    logger.debug(`Deleting member ${memberId}`);
+    logger.info(`Deleting member ${memberName}`);
+    memberStore.removeMember(memberId);
+    assessmentStore.removeAllAssessmentsByMember(memberId);
+    response.redirect("/trainer/");
+  },
+  
+  addComment(request, response){
+    const assessmentId = request.params.id;
+    const memberId = request.params.memberid;
+    const member = memberStore.getMemberById(memberId);
+    const newComment = {
+      id: assessmentId,
+      member: memberStore.getMemberByAssessmentId(assessmentId),
+      comment: request.body.comment
+    };
+    logger.debug("Inputting a new comment", newComment.comment);
+    logger.info(`Inputting a new comment on assessment (${assessmentId}) of ${member}. The comment is: ${newComment.comment}`);
+    assessmentStore.addComment(assessmentId, newComment.comment);
+    response.redirect("/trainerassessments/"+memberId);
+  },
 };
+
 
 module.exports = trainerdashboard;

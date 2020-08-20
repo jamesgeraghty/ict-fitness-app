@@ -10,10 +10,11 @@ const bmiCalculator= {
     const member = memberStore.getMemberById(id);
     const assessments = assessmentStore.getMemberAssessments(id);
     if(assessments.length===0) {
-      return member.weight / Math.pow(member.height, 2);
+      return (Math.floor (member.weight / (member.height** 2))/100);
     }
     else{
-      return assessments[assessments.length-1].weight / Math.pow(member.height, 2);
+      let bmiNumber = assessments[assessments.length-1].weight / (member.height** 2);
+      return bmiNumber.toFixed(2)
     }
   }
 }
