@@ -1,56 +1,14 @@
 {
   "members": [
-    
-    {
-      "name": "dave ",
-      "gender": "1",
-      "email": "dave@dave.com",
-      "password": "dave",
-      "address": "",
-      "height": "1.5",
-      "startingweight": "85",
-      "id": "e2ebc670-dede-11ea-9f4d-8565e50afbf4"
-    },
-    {
-      "name": "stefi",
-      "gender": "0",
-      "email": "stefi@graff.com",
-      "password": "q",
-      "address": "Germany",
-      "height": "2",
-      "startingweight": "89",
-      "id": "5e2a8f30-def6-11ea-84a3-1f5b300f65b9"
-    },
-    {
-      "name": "Amy",
-      "gender": "0",
-      "email": "amy@amy.com",
-      "password": "amy",
-      "address": "",
-      "height": "",
-      "startingweight": "",
-      "id": "4b7e02a0-df18-11ea-ac43-8d6718d83c06"
-    },
-    {
-      "name": "John Quinn",
-      "gender": "2",
-      "email": "john@guinn.com",
-      "password": "jq",
-      "address": "",
-      "height": "3.5",
-      "startingweight": "85",
-      "id": "a2d784c0-dffb-11ea-9149-4d13363de659"
-    },
-
     {
       "name": "James Geraghty",
       "gender": "",
-      "email": "james@g.com",
-      "password": "123",
-      "address": "Kilheffernan",
-      "height": "1.5",
+      "email": "james@james.com",
+      "password": "james",
+      "address": "kilheffernan",
+      "height": "1.3",
       "startingweight": "85",
-      "id": "4bcef6e0-e18b-11ea-9ffb-119a23999a64"
+      "id": "111d6c60-e2f4-11ea-b79e-739d8b1112d2"
     }
   ]
 }

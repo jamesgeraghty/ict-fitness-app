@@ -22,13 +22,21 @@ const assessmentStore = {
     this.store.save();
   },
   
+   addComment(id, comment) {
+    const assessment = this.getAssessment(id);
+    assessment.comment = comment;
+    this.store.update(this.collection, id, assessment);
+    //assessment.feedback = comment;
+    //this.store.add(this.collection, assessment);
+    this.store.save();
+  },
   
   getMemberAssessments(memberid) {
     return this.store.findBy(this.collection, { memberid: memberid });
   },
 
-  removeAssessment(id) {
-    const assessment = this.getAssessment(id);
+  removeAssessment(memberid) {
+    const assessment = this.getAssessment(memberid);
     this.store.remove(this.collection, assessment);
     this.store.save();
   },
@@ -38,6 +46,11 @@ const assessmentStore = {
     _.size(assessments, { id: assessmentId });
   
   },
+   removeAllAssessmentsByMember(memberid) {
+    const assessments = this.store.findBy(this.collection, { memberid: memberid });
+    this.store.remove(this.collection, assessments);
+    this.store.save();
+  }
 };
 
 module.exports = assessmentStore;

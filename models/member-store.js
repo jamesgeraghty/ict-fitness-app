@@ -12,6 +12,10 @@ const memberStore = {
     return this.store.findAll(this.collection);
   },
 
+  getMember(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+
   addMember(member) {
     this.store.add(this.collection, member);
     this.store.save();
@@ -31,6 +35,13 @@ const memberStore = {
     _.remove(assessment, { id: assessmentId });
     this.store.save();
   },
+  
+  removeMember(id) {
+    const member = this.getMember(id);
+    this.store.remove(this.collection, member);
+    this.store.save();
+  },
+  
 };
 
 module.exports = memberStore;
