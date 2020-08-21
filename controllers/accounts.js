@@ -72,6 +72,7 @@ const accounts = {
     return trainerstore.getTrainerByEmail(trainerEmail);
   },
 
+  
 };
 
 module.exports = accounts;

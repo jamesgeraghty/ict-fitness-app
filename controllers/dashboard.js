@@ -26,8 +26,10 @@ const dashboard = {
   
   addAssessment(request, response) {
     const loggedInMember = accounts.getCurrentMember(request);
-    let current_datetime = new Date() // Set variable to current date and time
-    let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear() + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes() + ":" + current_datetime.getSeconds();
+    let current_datetime = new Date() 
+    let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + 
+        current_datetime.getFullYear() + " " + current_datetime.getHours() + ":" + 
+        current_datetime.getMinutes() ;
     const newAssessment = {
       id: uuid.v1(), 
       memberid: loggedInMember.id,
