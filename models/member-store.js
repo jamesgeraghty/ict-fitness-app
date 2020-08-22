@@ -42,6 +42,10 @@ const memberStore = {
     this.store.save();
   },
   
+   getMemberByAssessmentId(id){
+    return this.store.findOneBy(this.collection, {id: id});
+  },
+  
 };
 
 module.exports = memberStore;
