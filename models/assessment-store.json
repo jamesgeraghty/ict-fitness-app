@@ -1,26 +1,28 @@
 {
   "assessmentCollection": [
     {
-      "id": "d29db170-e320-11ea-8896-65460d96192a",
-      "memberid": "06381380-e318-11ea-a5e5-11a4492ac4b2",
-      "entry": "20-8-2020 20:7:50",
+      "id": "5f3b9250-e48e-11ea-bf72-1db0a9b05161",
+      "memberid": "b8d7a3a0-e3bf-11ea-bf75-59d3bba419b7",
+      "entry": "22-8-2020 15:44:32",
       "weight": "12",
-      "chest": "12",
-      "thigh": "12",
-      "upperArm": "12",
-      "waist": "50",
-      "hips": ""
+      "chest": "123",
+      "thigh": "123",
+      "upperArm": "123",
+      "waist": "13",
+      "hips": "12",
+      "comment": "well done"
     },
     {
-      "id": "ffad5f60-e381-11ea-a82d-d1b3dd7a89c0",
-      "memberid": "06381380-e318-11ea-a5e5-11a4492ac4b2",
-      "entry": "21-8-2020 7:43:26",
-      "weight": "249.6",
-      "chest": "",
-      "thigh": "",
-      "upperArm": "",
-      "waist": "",
-      "hips": ""
+      "id": "8682cef0-e48e-11ea-bf72-1db0a9b05161",
+      "memberid": "75b449a0-e48e-11ea-bf72-1db0a9b05161",
+      "entry": "22-8-2020 15:45:38",
+      "weight": "89",
+      "chest": "89",
+      "thigh": "87",
+      "upperArm": "7",
+      "waist": "7",
+      "hips": "78",
+      "comment": "789"
     }
   ]
 }

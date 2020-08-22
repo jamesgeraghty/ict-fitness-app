@@ -41,20 +41,9 @@ const memberStore = {
     this.store.remove(this.collection, member);
     this.store.save();
   },
-   getMember(id) {
-    return this.store.findOneBy(this.collection, { id: id });
-  },
-
-  addMember(member) {
-    this.store.add(this.collection, member);
-    this.store.save();
-  },
   
-  updateMember(member,updatedMember){
-    member.name=updatedMember.name;
-    
-
-    this.store.save();
+   getMemberByAssessmentId(id){
+    return this.store.findOneBy(this.collection, {id: id});
   },
   
 };

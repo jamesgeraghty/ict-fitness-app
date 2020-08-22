@@ -5,10 +5,40 @@
       "gender": "",
       "email": "jamesgeraghty@live.ie",
       "password": "123",
-      "address": "Kilheffernan",
-      "height": "1.4",
+      "address": "kilheffernan",
+      "height": "1.5",
       "startingweight": "85",
-      "id": "06381380-e318-11ea-a5e5-11a4492ac4b2"
+      "id": "b8d7a3a0-e3bf-11ea-bf75-59d3bba419b7"
+    },
+    {
+      "name": "Amy Johnson ",
+      "gender": "",
+      "email": "amy@johnson.com",
+      "password": "amy",
+      "address": "kilheffernan",
+      "height": "1.2",
+      "startingweight": "86",
+      "id": "28139760-e3c0-11ea-bf75-59d3bba419b7"
+    },
+    {
+      "name": "john Quinn",
+      "gender": "1",
+      "email": "john@guinn.com",
+      "password": "john",
+      "address": "Clonmel",
+      "height": "1.4",
+      "weight": "85",
+      "id": "83af3dd0-e3e4-11ea-aff9-1b672fb78210"
+    },
+    {
+      "name": "Paul Ryan ",
+      "gender": "",
+      "email": "paul@ryan.com",
+      "password": "123",
+      "address": "Kilheffernan",
+      "height": "1.9",
+      "weight": "87",
+      "id": "75b449a0-e48e-11ea-bf72-1db0a9b05161"
     }
   ]
 }
