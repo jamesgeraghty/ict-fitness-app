@@ -76,16 +76,16 @@ const trainerdashboard = {
   addComment(request, response){
     const assessmentId = request.params.id;
     const memberId = request.params.memberid;
-    const memberName = memberStore.getMemberById(memberId).name;
+    const member = memberStore.getMemberById(memberId).name;
     const newComment = {
       id: assessmentId,
       member: memberStore.getMemberByAssessmentId(assessmentId),
       comment: request.body.comment
     };
     logger.debug("Inputting a new comment", newComment.comment);
-    logger.info(`Inputting a new comment on assessment (${assessmentId}) of ${memberName}. The comment is: ${newComment.comment}`);
+    logger.info(`Inputting a new comment on assessment (${assessmentId}) of ${member}. The comment is: ${newComment.comment}`);
     assessmentStore.addComment(assessmentId, newComment.comment);
-    response.redirect("/trainerassessments/"+memberId);
+    response.redirect("/trainerassessments");
   },
 };
 

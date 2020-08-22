@@ -11,16 +11,6 @@
       "id": "b8d7a3a0-e3bf-11ea-bf75-59d3bba419b7"
     },
     {
-      "name": "Amy Johnson ",
-      "gender": "",
-      "email": "amy@johnson.com",
-      "password": "amy",
-      "address": "kilheffernan",
-      "height": "1.2",
-      "startingweight": "86",
-      "id": "28139760-e3c0-11ea-bf75-59d3bba419b7"
-    },
-    {
       "name": "john Quinn",
       "gender": "1",
       "email": "john@guinn.com",
@@ -39,6 +29,16 @@
       "height": "1.9",
       "weight": "87",
       "id": "75b449a0-e48e-11ea-bf72-1db0a9b05161"
+    },
+    {
+      "name": "john",
+      "gender": "",
+      "email": "John@gmail.com",
+      "password": "123",
+      "address": "",
+      "height": "1.5",
+      "weight": "78",
+      "id": "e3cd7a60-e4b1-11ea-9868-0f6c28bfd19d"
     }
   ]
 }
