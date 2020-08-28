@@ -1,15 +1,28 @@
 {
   "assessmentCollection": [
     {
-      "id": "8aca9010-e7d6-11ea-8dd3-c3422cff7196",
+      "id": "dc3d0e00-e8a8-11ea-a843-c348dc0a3b61",
       "memberid": "819bbb70-e576-11ea-a98f-07341877a402",
-      "entry": "26-8-2020 19:58",
-      "weight": "12",
-      "chest": "",
-      "thigh": "",
-      "upperArm": "",
-      "waist": "",
-      "hips": ""
+      "entry": "27-8-2020 21:4",
+      "weight": "78",
+      "chest": "78",
+      "thigh": "78",
+      "upperArm": "78",
+      "waist": "78",
+      "hips": "78",
+      "comment": "Hello there"
+    },
+    {
+      "id": "db888da0-e901-11ea-8802-c5d93f6a0b37",
+      "memberid": "d53ff8c0-e901-11ea-8802-c5d93f6a0b37",
+      "entry": "28-8-2020 7:41",
+      "weight": "123",
+      "chest": "123",
+      "thigh": "123",
+      "upperArm": "1",
+      "waist": "231",
+      "hips": "21",
+      "comment": "well bah"
     }
   ]
 }
