@@ -64,7 +64,7 @@ const accounts = {
 
     memberstore.updateMember(loggedInMember, newMember);
 
-    response.redirect("/settings/");
+    response.redirect("/dashboard/");
   
   },
 
