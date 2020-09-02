@@ -1,7 +1,7 @@
 {
   "members": [
     {
-      "name": "Dave",
+      "name": "dave James ",
       "gender": "",
       "email": "jamesgeraghty@live.ie",
       "password": "123",
@@ -9,6 +9,26 @@
       "height": "1.5",
       "weight": "85",
       "id": "d53ff8c0-e901-11ea-8802-c5d93f6a0b37"
+    },
+    {
+      "name": "Bart Simpson",
+      "gender": "",
+      "email": "bart@simpson.com",
+      "password": "secret",
+      "address": "24",
+      "height": "1.7",
+      "weight": "80",
+      "id": "d6bcf1b0-eaf7-11ea-8a9c-c32c3c31f728"
+    },
+    {
+      "name": "Richy Caplice ",
+      "gender": "",
+      "email": "richy@caplice.com",
+      "password": "123",
+      "address": "Kilcash",
+      "height": "1.9",
+      "weight": "87",
+      "id": "f3abe460-ecf6-11ea-b695-255277097048"
     }
   ]
 }
