@@ -8,18 +8,27 @@ const BMI = require("../utils/bmi-calculator.js");
 const bmistatus = require("../utils/bmi-status.js");
 const memberStore = require("../models/member-store");
 const trainertore = require("../models/trainer-store");
+const idealBodyWeight= require("../utils/ideal-bodyweight.js");
+
+// index method used to create a vewi data object and this is sent to the template engine. This then rendering a complete page to the browser
+// 
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
+      // these asspect of the view data object will be displayed int he veow data page 
       assessments: assessmentStore.getMemberAssessments(loggedInMember.id),
       member: memberStore.getMemberById(loggedInMember.id),
       BMI: BMI.BMICalculation(loggedInMember.id),
       bmistatus:bmistatus.bmistatus(loggedInMember.id),
+      idealBodyWeight: idealBodyWeight.isIdealBodyWeight(loggedInMember.id),
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
+    
+//     takes in the 2 parameter; the name of the view and the object(view data). This means that fields can berferenced in the object.
+    
     response.render("dashboard", viewData);
   },
 
