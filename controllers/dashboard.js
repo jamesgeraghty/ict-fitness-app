@@ -36,7 +36,8 @@ const dashboard = {
   addAssessment(request, response) {
     const loggedInMember = accounts.getCurrentMember(request);
     let current_datetime = new Date() // Set variable to current date and time
-    let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear() + " " + current_datetime.getHours() + ":" + current_datetime.getMinutes();
+    let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear() + " " 
+    + current_datetime.getHours() + ":" + current_datetime.getMinutes();
     const newAssessment = {
       id: uuid.v1(), 
       memberid: loggedInMember.id,
@@ -47,6 +48,25 @@ const dashboard = {
       upperArm: request.body.upperArm,
       waist: request.body.waist,
       hips: request.body.hips,
+      trend(){
+        const assessments = assessmentStore.getMemberAssessments(loggedInMember.id);
+        let trend;
+        if(assessments.indexOf(newAssessment)===0){
+          if(assessments[assessments.indexOf(newAssessment)].weight<dashboard.weight){
+            trend = true;
+          }
+          else{
+            trend = false;
+          }
+        }
+        else if(assessments[assessments.indexOf(newAssessment)].weight<assessments[(assessments.indexOf(newAssessment))-1].weight){
+          trend = true;
+        }
+        else{
+          trend = false;
+        }
+        return trend;
+      },
     };
     assessmentStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
