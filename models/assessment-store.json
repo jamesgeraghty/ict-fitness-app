@@ -48,17 +48,6 @@
       "hips": "25"
     },
     {
-      "id": "88681ed0-e972-11ea-aded-a788e43a1eed",
-      "memberid": "d53ff8c0-e901-11ea-8802-c5d93f6a0b37",
-      "entry": "28-8-2020 21:7",
-      "weight": "25",
-      "chest": "",
-      "thigh": "",
-      "upperArm": "",
-      "waist": "",
-      "hips": ""
-    },
-    {
       "id": "681b5a90-e975-11ea-aded-a788e43a1eed",
       "memberid": "4fe9f6c0-e975-11ea-aded-a788e43a1eed",
       "entry": "28-8-2020 21:28",
@@ -80,7 +69,7 @@
       "upperArm": "98",
       "waist": "45",
       "hips": "45",
-      "comment": "Well done "
+      "comment": "keep it up"
     },
     {
       "id": "00a56ce0-ecf7-11ea-b695-255277097048",
@@ -91,7 +80,8 @@
       "thigh": "87",
       "upperArm": "78",
       "waist": "87",
-      "hips": "78"
+      "hips": "78",
+      "comment": "well done"
     },
     {
       "id": "080d2d60-ecf7-11ea-b695-255277097048",
@@ -106,16 +96,15 @@
       "comment": "Well Done boi "
     },
     {
-      "id": "b2147e70-ecfd-11ea-b1da-d3fc7dd3d40e",
+      "id": "64ddefc0-ee8c-11ea-a546-7b4aa754a796",
       "memberid": "d53ff8c0-e901-11ea-8802-c5d93f6a0b37",
-      "entry": "2-9-2020 9:21",
-      "weight": "65",
-      "chest": "",
-      "thigh": "",
-      "upperArm": "",
-      "waist": "",
-      "hips": "",
-      "comment": "well done "
+      "entry": "4-9-2020 8:55",
+      "weight": "44",
+      "chest": "78",
+      "thigh": "78",
+      "upperArm": "78",
+      "waist": "78",
+      "hips": ""
     }
   ]
 }
