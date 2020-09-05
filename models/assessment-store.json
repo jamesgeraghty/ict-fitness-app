@@ -69,7 +69,7 @@
       "upperArm": "98",
       "waist": "45",
       "hips": "45",
-      "comment": "keep it up"
+      "comment": "well done"
     },
     {
       "id": "00a56ce0-ecf7-11ea-b695-255277097048",
@@ -178,6 +178,17 @@
       "entry": "Sat, 05 Sep 2020 08:08:55 GMT",
       "weight": "85",
       "chest": "87",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "e8e9e940-ef4f-11ea-8448-af15e23f3622",
+      "memberid": "ba432980-ef4f-11ea-8448-af15e23f3622",
+      "entry": "Sat, 05 Sep 2020 08:15:07 GMT",
+      "weight": "35",
+      "chest": "50",
       "thigh": "",
       "upperArm": "",
       "waist": "",
