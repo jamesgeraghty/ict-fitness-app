@@ -105,6 +105,83 @@
       "upperArm": "78",
       "waist": "78",
       "hips": ""
+    },
+    {
+      "id": "6d90ae20-ef4d-11ea-994c-7ba099c611bd",
+      "memberid": "6679a5b0-ef4d-11ea-994c-7ba099c611bd",
+      "entry": "5-9-2020 7:57",
+      "weight": "12",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "0b387b80-ef4e-11ea-a9ec-efefeb884600",
+      "memberid": "f9e9a2a0-ef4d-11ea-a9ec-efefeb884600",
+      "entry": "5-9-2020 8:1",
+      "weight": "12",
+      "chest": "50",
+      "thigh": "26",
+      "upperArm": "12",
+      "waist": "1",
+      "hips": "12"
+    },
+    {
+      "id": "14963fa0-ef4e-11ea-a9ec-efefeb884600",
+      "memberid": "f9e9a2a0-ef4d-11ea-a9ec-efefeb884600",
+      "entry": "5-9-2020 8:2",
+      "weight": "100",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "1bda4b80-ef4e-11ea-a9ec-efefeb884600",
+      "memberid": "f9e9a2a0-ef4d-11ea-a9ec-efefeb884600",
+      "entry": "5-9-2020 8:2",
+      "weight": "90",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "2153a980-ef4e-11ea-a9ec-efefeb884600",
+      "memberid": "f9e9a2a0-ef4d-11ea-a9ec-efefeb884600",
+      "entry": "5-9-2020 8:2",
+      "weight": "100",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "d59dd640-ef4e-11ea-b470-21dbe6513dc4",
+      "memberid": "f9e9a2a0-ef4d-11ea-a9ec-efefeb884600",
+      "entry": "Sat, 05 Sep 2020 08:07:25 GMT",
+      "weight": "12",
+      "chest": "",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "0acddd60-ef4f-11ea-b9ff-e946f69dc5c4",
+      "memberid": "fe822110-ef4e-11ea-b9ff-e946f69dc5c4",
+      "entry": "Sat, 05 Sep 2020 08:08:55 GMT",
+      "weight": "85",
+      "chest": "87",
+      "thigh": "",
+      "upperArm": "",
+      "waist": "",
+      "hips": ""
     }
   ]
 }
