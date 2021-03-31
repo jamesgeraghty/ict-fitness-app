@@ -4,7 +4,7 @@ Welcome to the Glitch GYM
 
 
 ## Read Me
-James Geraghty 20022946 - Enterprise Website Development - POI Core
+James Geraghty 20022946 - ICT Skills 1
 
 
 > **Delopyed**
